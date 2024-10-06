@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --borderb: rgba(147, 147, 147, 0.5);
+
+  --textWhite: #ffffff;
+  --textDark: #000000;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,3 +36,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
